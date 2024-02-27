@@ -34,6 +34,7 @@ input[type=checkbox]:checked ~ #restart-box {
 
 #restart-box {
     background-color: #f38ba8;
+    transition: all 150ms ease-in-out;
     color: #1e1e2e;
     text-align: center;
     height: 100%;
