@@ -3,29 +3,80 @@ body {
     font-family: "Tahoma", sans-serif;
     font-size: 10px;
     background: #000000;
-    padding: 4px;
     font-smooth: none;
-    -webkit-font-smoothing: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#restart-container {
+    margin-left: 20px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #restart-box {
+    background-color: #a6e3a1;
+    color: #1e1e2e;
+    text-align: center;
+}
+
+#restart-box > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0px 10px 0px 10px;
+    user-select: none;
+}
+
+#restart-box {
+    background-color: #f38ba8;
+    transition: all 150ms ease-in-out;
+    color: #1e1e2e;
+    text-align: center;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#table-container {
+    z-index: 1;
+}
+
+#controls {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 4px 4px 0px 4px;
+    background: transparent;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 5px;
+}
+
+#controls > input {
+    border-radius: 10px 10px 0px 0px;
 }
 
 .team-red {
-    color: #B8383B;
+    color: #f38ba8;
 }
 
 .team-blu {
-    color: #5885A2;
+    color: #89b4fa;
 }
 
 .error {
-    color: #9a3130;
+    color: #f5c2e7;
 }
 
 .warning {
-    color: #dec300;
+    color: #f9e2af;
 }
 
 .nohighlight {
-    color: #a1aa95;
+    color: #a6adc8;
 }
 
 #clients tr:not(:first-child) .client-actions {
@@ -43,9 +94,13 @@ a:visited {
 
 #container-login
 {
-    display: inline-block;
-    padding: 3px;
-    margin-bottom: 3px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 #footer {
@@ -53,6 +108,11 @@ a:visited {
     bottom: 16;
     left: 0;
     width: 100%;
+}
+
+#footer > hr {
+    border-top: #fab387 solid 1px;;
+    
 }
 
 #footer span {
@@ -64,9 +124,9 @@ a:visited {
 }
 
 .disconnected .connected {
-    color: #a1aa95;
+    color: #f5e0dc;
 }
 
 .stopped .active {
-    color: #a1aa95;
+    color: #f5e0dc;
 }
