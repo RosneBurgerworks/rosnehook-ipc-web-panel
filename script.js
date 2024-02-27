@@ -169,7 +169,7 @@ function updateIPCData(row, id, data) {
 		}
 		row.find('.client-status').removeClass('warning').addClass('error').text('Likely dead ' + time);
 	}
-	row.find('.client-uptime').text(format(time - data.starttime));
+	// row.find('.client-uptime').text(format(time - data.starttime));
 	row.find('.client-pid').text(data.pid);
 	row.find('.client-id').text(id);
 	row.find('.client-name').text(data.name);
