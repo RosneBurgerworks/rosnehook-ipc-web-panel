@@ -4,17 +4,21 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="vgui.css">
         <script src="bundle.js"></script>
+        <script type="text/javascript" src="lmao.js"></script>
     </head>
     <body class="vgui-container vgui-font">
         <h1>Rosnehook IPC Web Panel</h1>
+        <div class="ilovedivs">
         <div id="container-login" class="vgui-outset">
             <input id="api-password" type="text" placeholder="Password">
 
+
         </div>
-        <input id="api-login-button" type="button" value="Login">
-        <br>
+            <br>
+        <input id="api-login-button"  type="button" value="Login">
+        </div>
         <div id="console-container">
-            <input type="button" id="open-console-send" onclick='document.getElementById("consoleform").style.display = "block";' value="Console" class="vgui-border-out">
+            <input type="button" id="open-console-send" onclick='consolefun()' value="Console" class="vgui-border-out">
         </div>
         <div class="consolepopup">
             <div class="consoleform" id="consoleform">

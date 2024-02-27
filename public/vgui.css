@@ -16,29 +16,29 @@ input {
 }
 
 input:not([type=button]), .vgui-inset {
-    border-bottom: 1px solid #899180;
-    border-right: 1px solid #899180;
-    border-top: 1px solid #282f22;
-    border-left: 1px solid #282f22;
-    background: #3f4737;
+    border-bottom: 1px solid #07295D;
+    border-right: 1px solid #07295D;
+    border-top: 1px solid #07295D;
+    border-left: 1px solid #07295D;
+    background: #4069A8;;
     color: #d8dfd3;
 }
 
 input[type=button]:not(:active), .vgui-outset {
-    border-top: 1px solid #899180;
-    border-left: 1px solid #899180;
-    border-bottom: 1px solid #282f22;
-    border-right: 1px solid #282f22;
+    border-top: 1px solid #07295D;
+    border-left: 1px solid #07295D;
+    border-bottom: 1px solid #07295D;
+    border-right: 1px solid #07295D;
     color: #d8dfd3;
-    background: #4d5844;
+    background: #4069A8;;
 }
 
 input[type=button]:active {
-    border-bottom: 1px solid #899180;
-    border-right: 1px solid #899180;
-    border-top: 1px solid #282f22;
-    border-left: 1px solid #282f22;
-    background: #3f4737;
+    border-bottom: 1px solid #07295D;
+    border-right: 1px solid #07295D;
+    border-top: 1px solid #07295D;
+    border-left: 1px solid #07295D;
+    background: #203450;
     color: #d8dfd3;
 }
 
@@ -52,11 +52,11 @@ input[type=button]:active {
     min-width: 8em;
     padding: 3px;
     padding-right: 16px;
-    border-bottom: 1px solid #899180;
-    border-right: 1px solid #899180;
-    border-top: 1px solid #282f22;
-    border-left: 1px solid #282f22;
-    background: url('vgui-dropdown.png') #3f4737 no-repeat right 2px center;
+    border-bottom: 1px solid #07295D;
+    border-right: 1px solid #07295D;
+    border-top: 1px solid #07295D;
+    border-left: 1px solid #051838;
+    background: url('vgui-dropdown.png') #4069A8 no-repeat right 2px center;
     color: #d8dfd3;
 }
 
@@ -114,7 +114,7 @@ input[type=button]:active {
 }
 
 .vgui-table tbody tr:first-child {
-    background: #4d5844;
+    background: #4069A8;
 }
 
 .vgui-table tbody tr:first-child td {
@@ -135,7 +135,7 @@ input[type=checkbox]:before {
     border-right: 1px solid #899180;
     border-top: 1px solid #282f22;
     border-left: 1px solid #282f22;
-    background: #3f4737;
+    background: #0F52BA;
     content: "";
     display: inline-block;
     width: 10px;
