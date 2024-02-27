@@ -8,14 +8,22 @@
     <body class="vgui-container vgui-font">
         <h1>Rosnehook IPC Web Panel</h1>
         <div id="container-login" class="vgui-outset">
-            If you don't see any data, please login using the password shown in console and refresh the page
             <input id="api-password" type="text" placeholder="Password">
-            <input id="api-login-button" type="button" value="Login">
+
         </div>
+        <input id="api-login-button" type="button" value="Login">
         <br>
         <div id="console-container">
-            <span><input type="text" id="console" placeholder="command for every client" size=64 class="vgui-border-inset"></span>
-            <input type="button" id="console-send" value="Submit" class="vgui-border-out">
+            <input type="button" id="open-console-send" onclick='document.getElementById("consoleform").style.display = "block";' value="Console" class="vgui-border-out">
+        </div>
+        <div class="consolepopup">
+            <div class="consoleform" id="consoleform">
+                <form class="formContainer">
+                    <h2>Execute console command on all clients</h2>
+                    <input type="text" id="command" placeholder="Command" name="command" required>
+                    <button type="submit" class="console-send">Execute</button>
+                </form>
+            </div>
         </div>
         <br>
         <div id="status" class="nohighlight">
@@ -63,8 +71,11 @@
         </div>
         <div id="footer">
             <hr>
-            <span class="nohighlight">
-               RosneBurgerworks, 2023 | <a href="https://github.com/rosneburgerworks" target="_blank">github</a>
+            <span class="nohighlight rosne">
+               RosneBurgerworks, 2024 | <a href="https://github.com/rosneburgerworks" target="_blank">github</a>
+            </span>
+            <span class="nodata">
+                <a>No data? Make sure to log in by inputting the password found in the console and pressing login!</a>
             </span>
         </div>
     </body>

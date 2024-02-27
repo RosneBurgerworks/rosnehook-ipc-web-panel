@@ -315,8 +315,29 @@ $(function() {
             console.log(b);
         });
     });
+
+	function openForm() {
+		document.getElementById("consolepopup").style.display = "block";
+	}
+	function closeForm() {
+		document.getElementById("consolepopup").style.display = "none";
+	}
+// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function (event) {
+		let modal = document.getElementById('consolepopup');
+		if (event.target == modal) {
+			closeForm();
+		}
+	}
+
+	$('open-console-send').on('click', () => {
+		document.getElementById("consoleform").style.display = "block";
+	})
+
+
 	$('#bot-refresh').on('click', refreshComplete);
 	$('#console-send').on('click', runCommand);
+
 	$("#bot-restartall").on('click', restartAllButtonCallback);
 	$("#bot-terminateall").on('click', terminateAllButtonCallback);
 });
