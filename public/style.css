@@ -46,9 +46,7 @@ flex-direction: column;
 }
 .rosne{
     position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
+    right:2;
     text-align: center;
 }
 #clients tr:not(:first-child) .client-actions {
