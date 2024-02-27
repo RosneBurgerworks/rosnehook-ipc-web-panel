@@ -169,7 +169,7 @@ function updateIPCData(row, id, data) {
 		}
 		row.find('.client-status').removeClass('warning').addClass('error').text('Likely dead ' + time);
 	}
-	//row.find('.client-uptime').text(format(time - data.starttime));
+	row.find('.client-uptime').text(format(time - data.starttime));
 	row.find('.client-pid').text(data.pid);
 	row.find('.client-id').text(id);
 	row.find('.client-name').text(data.name);
@@ -181,7 +181,7 @@ function updateIPCData(row, id, data) {
 	row.find('.client-hsrate').text(hsrate + '%');
 	if (data.connected) {
 		row.toggleClass('disconnected', false);
-		row.find('.client-uptime-server').text(format(Date.now() - data.ts_connected / 1000));
+		row.find('.client-uptime-server').text(format(Date.now() - data.ts_connected * 1000));
 		if (data.ts_disconnected) {
 			row.find('.client-uptime-queue').text(format(1000 * (data.ts_connected - data.ts_disconnected)));
 		}
