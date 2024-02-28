@@ -62,6 +62,24 @@ a:visited {
     color: white;
 }
 
+.rosnegay{
+    /* i have no fucking clue why, but removing these 2 slashes breaks this. dont remove pls <3 */
+    //
+    position: absolute;
+    top: 0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.vgui-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
 #container-login
 {
     display:inline-block;
@@ -92,6 +110,7 @@ a:visited {
     left: 0;
     width: 100%;
 }
+
 
 
 #autorestart-bots{
